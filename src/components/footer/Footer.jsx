@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Member Club Section */}
         <div className={styles.memberClub}>
           <p>Kunne du også tænke dig at blive medlem af vores</p>
-          <h3>Kunderklub</h3>
+          <h3>Kundeklub</h3>
           <button className={styles.memberButton}>Bliv medlem</button>
         </div>
 

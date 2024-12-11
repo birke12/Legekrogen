@@ -1,6 +1,9 @@
 import PageHeader from "../components/pageHeader/PageHeader";
 import headerImg from "../assets/heros/forsiden.jpg"
-import Products from "../components/products/Product";
+
+import MemberReviews from "../components/memberReviews/MemberReviews";
+
+import FavProducts from "../components/favProducts/FavProducts";
 
 
 const Home = () => {
@@ -13,7 +16,10 @@ const Home = () => {
         
       />
       <div>
-        <Products />
+        <FavProducts />
+      </div>
+      <div>
+        <MemberReviews />
       </div>
      
       

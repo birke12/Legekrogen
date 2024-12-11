@@ -10,8 +10,8 @@ const useFetchProducts = () => {
       setIsLoading(true);
       const response = await fetch("https://legekrogen.webmcdm.dk/products");
       const data = await response.json();
-      console.log("Fetched Products:", data.products); // Log the products array
-      setProducts(data.products); // Set all fetched products
+      console.log(data); // Log the products array
+      setProducts.data // Assuming the API response has a 'products' key
     } catch (error) {
       setError(error.message);
       console.error(error);
@@ -20,12 +20,15 @@ const useFetchProducts = () => {
     }
   };
 
+ const recomTrue = products.filter((product) => product.recommended = true)
+
   useEffect(() => {
     fetchProducts();
   }, []);
 
   // Return the full products list, loading state, and error
   return {
+   recomTrue,
     products, // All products
     isLoading, // Whether the data is still loading
     error, // Any error encountered

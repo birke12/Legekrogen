@@ -1,0 +1,16 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    margin: 0 auto;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  background:
+   radial-gradient(farthest-side,#007bff 94%,#0000) left/40px 40px no-repeat
+   lightblue;
+  animation: l2 1s infinite linear;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@keyframes l2 {
+    50% {background-position:right }
+}

@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProductCard = ({ product }) => {
-  const [favorites, setFavorites] = useLocalStorage("Favorites", []);
-  const isFavorite = favorites.includes(product.id);
+  const [products, setProducts] = useLocalStorage("Products", []);
+  const isProducts = products.includes(product.id);
 
   const handleLike = () => {
-    setFavorites((prevFavorites) =>
-      isFavorite
-        ? prevFavorites.filter((fav) => fav !== product.id)
-        : [...prevFavorites, product.id]
+    setProducts((prevProducts) =>
+      isproducts
+        ? prevProducts.filter((pro) => pro !== product.id)
+        : [...prevProducts, product.id]
     );
   };
 
@@ -46,9 +46,9 @@ const ProductCard = ({ product }) => {
       <div className={styles.likeContainer}>
         <button
           onClick={handleLike}
-          className={isFavorite ? styles.removeButton : styles.addButton}
+          className={isProducts ? styles.removeButton : styles.addButton}
         >
-          {isFavorite ? "Fjern fra Favoritter" : "Tilføj til Favoritter"}
+          {isProducts ? "Fjern fra Kruv" : "Tilføj til Kurv"}
         </button>
       </div>
     </figure>
