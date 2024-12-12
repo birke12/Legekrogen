@@ -1,121 +1,66 @@
 .ProductCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #ddd;
+
+  background: #9e66a2;
+
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
-  width: 250px; /* Default card width */
+  width: 440px; /* Default card width */
   margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 30px;
+
+  margin-top: 70px;
+  color: #ffffff;
 }
 
 .ProductCard:hover {
   transform: translateY(-5px);
 }
 
+.imageContainer {
+  width: 100%;
+  width: 100%;
+}
+
 .imageCard {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: 300px; /* Set a specific height */
+  object-fit: cover; /* Ensures the image maintains its proportions */
   border-bottom: 1px solid #ddd;
 }
 
-.priceContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0;
+.textContainer {
 }
 
-.priceTxt {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #555;
+.detailsContainer {
+  margin: 20px;
+  margin-top: 50px;
 }
 
 .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 
-.features {
-  margin: 10px 0;
-  width: 90%;
+.textContainer {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
-.feature {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin: 5px 0;
+.title {
+  color: #d4b2d2;
+  font-family: "Advent Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 5px; /* Reduced margin between title and description */
 }
 
-.checkmark {
-  color: #4caf50;
-  margin-right: 8px;
-}
-
-.likeContainer {
-  margin: 10px 0;
-  cursor: pointer;
-}
-
-.icon {
-  transition: transform 0.2s ease;
-}
-
-.icon:hover {
-  transform: scale(1.2);
-}
-
-.removeButton {
-  background-color: red;
-  
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and smaller devices */
-  .ProductCard {
-    width: 200px; /* Reduce card width */
-    padding: 20px; /* Adjust padding for smaller view */
-  }
-
-  .imageCard {
-    height: 120px; /* Reduce image height */
-  }
-
-  .priceTxt, .price {
-    font-size: 0.9rem; /* Smaller font size */
-  }
-
-  .features {
-    width: 100%; /* Expand to full width for smaller screens */
-  }
-}
-
-@media (max-width: 780px) { /* Mobile devices */
-  .ProductCard {
-    width: 150px; /* Even smaller width */
-    padding: 15px;
-  }
-
-  .imageCard {
-    height: 100px;
-  }
-
-  .priceTxt, .price {
-    font-size: 0.8rem;
-  }
-
-  .features {
-    font-size: 0.8rem; /* Adjust font size for features */
-  }
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0; /* Remove any margin */
 }

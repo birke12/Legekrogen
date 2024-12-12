@@ -11,7 +11,7 @@ const useFetchProducts = () => {
       const response = await fetch("https://legekrogen.webmcdm.dk/products");
       const data = await response.json();
       console.log(data); // Log the products array
-      setProducts.data // Assuming the API response has a 'products' key
+      setProducts(data);
     } catch (error) {
       setError(error.message);
       console.error(error);
@@ -20,15 +20,19 @@ const useFetchProducts = () => {
     }
   };
 
- const recomTrue = products.filter((product) => product.recommended = true)
+  // Filter products that are recommended and sort them by price (highest first)
+  const recomTrue = products.filter((product) => product.recommended === true);
+
+  // Sort products by price in descending order (highest price first)
+  const sortedByPrice = recomTrue.sort((a, b) => b.price - a.price); // Sorting by highest price first
 
   useEffect(() => {
     fetchProducts();
   }, []);
 
-  // Return the full products list, loading state, and error
+  // Return the sorted and filtered list, loading state, and error
   return {
-   recomTrue,
+    recomTrue: sortedByPrice, // Return the sorted list of recommended products
     products, // All products
     isLoading, // Whether the data is still loading
     error, // Any error encountered
