@@ -35,6 +35,7 @@ const Footer = () => {
             >
               <FaInstagram className={styles.socialIcon} />
             </a>
+            
           </div>
         </div>
       </div>

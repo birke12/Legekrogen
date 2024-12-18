@@ -83,9 +83,16 @@ const MembersClub = () => {
       )}
       {isModalOpen && (
         <Modal onClose={closeModal} className={styles.modal1}>
-          <div>
-            <h2>Tak for din tilmelding!</h2>
-            <p>Vi sender dig en bekræftelsesmail på {email}</p>
+          <div className={styles.modalContent}>
+            <h2 className={styles.modaltext}>Tak!</h2>
+            {/* <p>Vi sender dig en bekræftelsesmail på {email}</p> */}
+            <p className={styles.modaltext}>
+              Vi er så glade for at du vil være en del af vores kundeklub
+            </p>
+            <p className={styles.modaltext}>
+              Tag et kig på din indbakke. Vi har givet dig fri fragt på din
+              næste ordre.
+            </p>
           </div>
         </Modal>
       )}

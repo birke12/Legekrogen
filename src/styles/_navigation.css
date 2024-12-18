@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: ficp;
   padding: 1rem 2rem;
   background-color: #3d5fa3;
   border-bottom: 1px solid #e0e0e0;
@@ -54,7 +54,7 @@
 
       &:after {
         content: "";
-        position: absolute;
+        position: relative;
         width: 100%;
         transform: scaleX(0);
         height: 2px;
@@ -85,7 +85,7 @@
   .nav-links {
     display: flex;
     flex-direction: row;
-    position: static;
+    position: fixed;
     width: auto;
     background-color: transparent;
    

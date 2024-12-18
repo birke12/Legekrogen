@@ -1,27 +1,33 @@
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(30, 51, 118, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-      color: white;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(132, 97, 151, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: white;
+}
+
+
   
- .content {
+.content {
   position: relative;
   background-color: rgb(249, 225, 187);
   display: flex;
+  flex-direction: column; /* Ensures vertical stacking */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
   padding: 3em;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   color: white;
+  text-align: center; /* Ensures text is centered */
+  border-radius: 10px; /* Optional for better aesthetics */
+
+  
+  
 
   button {
     position: absolute;
@@ -33,9 +39,44 @@
     background: none;
     margin: 0 auto;
       color: white;
+      margin: 0 auto;
   }
 }
 
+h2 {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-family: "Square Peg", serif;
+  font-weight: 400;
+  font-size: 78px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.modalButton {
+  height: 45px;
+  background-color: rgb(73, 96, 146);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 320px;
+  border-radius: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-align: center; /* Center text within the button */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.modalButton:hover {
+  background-color: rgb(60, 80, 130); /* Darker shade for hover */
+}
+
+
+.modalButtonContainer {
+  
+  display: flex;
+  justify-content: center;
+}
 
 
   

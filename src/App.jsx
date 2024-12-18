@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <div className="app">
-    {/*   <TopInfo /> */}
+      <TopInfo />
         <Navigation />
         <div className="content">{routes}</div>
         <BecomeMember />
