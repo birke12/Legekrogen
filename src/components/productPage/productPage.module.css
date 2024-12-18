@@ -50,7 +50,7 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    grid-template-columns: 1fr; 
   }
 
   .favGrid {
@@ -63,8 +63,8 @@
 
   .grid {
     display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
     padding: 20px;
     max-width: 1900px;
     margin: 0 auto;

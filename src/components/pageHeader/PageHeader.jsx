@@ -1,6 +1,13 @@
 import styles from "./pageHeader.module.css";
 
-const PageHeader = ({ title, subTitle, question, headerImg, toy, headerType }) => {
+const PageHeader = ({
+  title,
+  subTitle,
+  question,
+  headerImg,
+  toy,
+  headerType,
+}) => {
   return (
     <header
       /* className={`${styles.header} ${header2 || ""}`} */
@@ -15,11 +22,21 @@ const PageHeader = ({ title, subTitle, question, headerImg, toy, headerType }) =
       }
       style={{ backgroundImage: `url(${headerImg})` }}
     >
-      <div className={styles.headerMainContainer}>
+      <div
+        className={`${styles.headerMainContainer} ${
+          headerType === "home"
+            ? styles.homeHeaderMainContainer
+            : headerType === "products"
+            ? styles.productsHeaderMainContainer
+            : headerType === "memberpage"
+            ? styles.memberpageHeaderMainContainer
+            : headerType === "faq"
+            ? styles.faqHeaderMainContainer
+            : styles.defaultHeaderMainContainer
+        }`}
+      >
         {headerType === "home" && (
           <>
-           
-
             <div className={styles.headerContainer}>
               <h1 className={styles.title}>{title}</h1>
               <h1 className={styles.question}>{question}</h1>
@@ -29,8 +46,7 @@ const PageHeader = ({ title, subTitle, question, headerImg, toy, headerType }) =
         )}
         {headerType === "products" && (
           <>
-            
-             <div className={styles.headerContainer}>
+            <div className={styles.headerContainer2}>
               <h1 className={styles.title}>{title}</h1>
               <h1 className={styles.question}>{question}</h1>
               <h3 className={styles.toy}>{toy}</h3>
@@ -39,7 +55,6 @@ const PageHeader = ({ title, subTitle, question, headerImg, toy, headerType }) =
         )}
         {headerType === "faq" && (
           <>
-            
             <div className={styles.headerContainer}>
               <h1 className={styles.title}>{title}</h1>
               <h1 className={styles.question}>{question}</h1>
@@ -49,7 +64,6 @@ const PageHeader = ({ title, subTitle, question, headerImg, toy, headerType }) =
         )}
         {headerType === "memberpage" && (
           <>
-            
             <div className={styles.headerContainer}>
               <h1 className={styles.title}>{title}</h1>
               <h1 className={styles.toy}>{toy}</h1>
@@ -64,7 +78,8 @@ const PageHeader = ({ title, subTitle, question, headerImg, toy, headerType }) =
 
 export default PageHeader;
 
-
-{/* <h1 className={styles.title}>btffbf</h1>
+{
+  /* <h1 className={styles.title}>btffbf</h1>
         <h2 className={styles.question}>{question}</h2>
-        {subTitle && <h4>{subTitle}</h4>} */}
+        {subTitle && <h4>{subTitle}</h4>} */
+}
