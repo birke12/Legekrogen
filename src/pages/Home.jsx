@@ -6,7 +6,7 @@ import FavProducts from "../components/favProducts/FavProducts";
 const Home = () => {
   return (
     <article>
-      <PageHeader
+      <PageHeader headerType= "home"
         title="At lege er at leve"
         subTitle="Her hos os har vi et start udvalg af legetøj i høj kvalitet"
         headerImg={headerImg}

@@ -12,10 +12,13 @@
 }
 
 .burger-menu {
-  cursor: pointer;
+  position: fixed; /* Make it fixed to the viewport */
+  top: 3.8rem; /* Adjust the top position */
+  right: 1rem; /* Adjust the right position */
   font-size: 2rem;
   color: rgb(255, 255, 255);
   z-index: 999;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -82,12 +85,12 @@
   }
 
   .nav-links {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    width: auto;
-    background-color: transparent;
-   
+    display: flex; /* Make nav links visible */
+    flex-direction: row; /* Horizontal layout for desktop */
+    position: relative; /* Ensure links stay inside the navbar */
+    width: auto; /* Ensure width adjusts based on content */
+    background-color: transparent; /* Transparent background for desktop */
+
     li {
       padding: 0;
       margin: 0 1rem;
@@ -99,11 +102,11 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .nav-links {
     height: 100vh;
     padding-top: 160px; /* Add padding from the top */
+    position: fixed;
   }
 
   ul {
@@ -113,6 +116,8 @@
   a {
     font-size: 30px;
     font-family: "Quicksand", serif;
-  font-weight: 300;
+    font-weight: 300;
+  }
+  .burger-menu {
   }
 }

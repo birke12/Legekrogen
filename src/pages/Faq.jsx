@@ -6,7 +6,7 @@ import Accordion from "../components/accordion/Accordion";
 const Faq = () => {
   return (
     <section>
-      <PageHeader
+      <PageHeader headerType="faq"
         headerImg={headerImg}
         title="Har du nogle"
         question="SPØRGSMÅL?"

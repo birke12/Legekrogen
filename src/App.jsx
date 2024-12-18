@@ -8,12 +8,13 @@ import MembersPage from "./pages/MembersPage";
 import Faq from "./pages/Faq";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import styles from "./components/topInfo/topInfo.module.css"; // Ensure you import styles here
-import BecomeMember from "./components/becomeMember/BecomeMember.jsx";
 
-const TopInfo = () => {
+import BecomeMember from "./components/becomeMember/BecomeMember.jsx";
+import TopInfo from "./components/topInfo/topInfo.jsx";
+
+/* const TopInfo = () => {
   return <div className={styles.topInfo}>Fri fragt ved køb over 499 ,-</div>;
-};
+}; */
 
 function App() {
   const routes = useRoutes([

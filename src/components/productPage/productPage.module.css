@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: rgb(208, 154, 216);
   padding-top: 50px;
-  
+
   padding-bottom: 80px;
 }
 
@@ -19,24 +19,33 @@
   text-align: center;
 }
 
+.productsPageHeader {
+  color: #a54141;
+  margin-top: 50px;
+}
+
 .gridHeader h3 {
   color: #f9f9f9;
- font-style: normal;
- font-weight: 300;
- font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
 }
 .gridHeader h2 {
   color: #f9f9f9;
   font-family: Arial, Helvetica, sans-serif;
- font-style: normal;
- font-weight: 500;
- font-size: 40px;
- letter-spacing: 3px;
- margin-top: -30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-top: -30px;
+}
+
+.subTitle {
+  font-size: 40px;
 }
 
 .title {
-font-size: 10px;
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -45,29 +54,27 @@ font-size: 10px;
   }
 
   .favGrid {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(208, 154, 216);
-  padding-top: 50px;
-  padding-bottom: 80px;
-  
-}
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208, 154, 216);
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
 
-.grid {
-  display: grid; /* Use CSS Grid */
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Space between cards */
-  padding: 20px;
-  max-width: 1900px;
-  margin: 0 auto;
-  gap: 40px;
-}
+  .grid {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    max-width: 1900px;
+    margin: 0 auto;
+    gap: 40px;
+  }
 
-.grid > .ProductCard {
-  border: 1px solid #a54141;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #f9f9f9;
-}
-
+  .grid > .ProductCard {
+    border: 1px solid #a54141;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
 }

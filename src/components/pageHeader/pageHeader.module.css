@@ -1,4 +1,4 @@
-.header {
+.headerMainContainer {
   position: relative;
   height: 90vh;
   background-size: cover;
@@ -9,18 +9,10 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
+  background-color: rgba(173, 128, 161, 0.5);
+ 
 }
 
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(173, 128, 161, 0.5); /* Overlay color */
-  z-index: 1; /* Below text */
-}
 
 .header > div {
   position: relative;
@@ -30,8 +22,9 @@
 .title {
   margin: 0;
   font-family: "Square Peg", cursive;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 64px;
+  margin-bottom: -30px;
 }
 
 .question {
@@ -40,6 +33,14 @@
   font-weight: 300;
   font-size: 48px;
   margin-bottom: 10px;
+}
+.toy {
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 68px;
+  margin-top: 10px;
 }
 
 .header h4 {
@@ -51,6 +52,16 @@
   font-size: 20px;
   max-width: 300px;
   margin-top: 10px;
+}
+
+.subTitle {
+  color: rgb(255, 255, 255);
+  max-width: 350px;
+  font-family: "Quicksand", serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  font-style: normal;
 }
 
 @media (min-width: 798px) {

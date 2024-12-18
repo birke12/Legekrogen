@@ -10,11 +10,11 @@ const ProductsPage = () => {
 
   return (
     <section>
-      <PageHeader
+      <PageHeader headerType="products"
         headerImg={headerImg}
         title="På udkig efter nyt"
-        subTitle="LEGETØJ"
-        header2={styles.customHeader}
+        toy="LEGETØJ"
+        /* header2={styles.customHeader} */
       />
       <section className={styles.favGrid}>
         <div className={styles.gridHeader}>

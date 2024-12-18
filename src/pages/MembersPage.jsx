@@ -8,10 +8,11 @@ import MembersClub from "../components/membersClub/MembersClub";
 const Faq = () => {
   return (
     <section>
-      <PageHeader
+      <PageHeader headerType="memberpage"
         headerImg={headerImg}
-        title="Ofte stillede spørgsmål"
-        subTitle="FAQ"
+        title="Bliv medlem af vores"
+        toy="KUNDEKLUB"
+        subTitle="og få ekslusive nyheder før alle andre"
       />
       <section >
        <MembersClub />

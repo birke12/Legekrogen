@@ -10,11 +10,27 @@ h3 {
   color: #333;
 }
 
-h2 {
+.titleMember {
   font-size: 2rem;
-  color: #222;
+  color: #505098;
   font-weight: bold;
   margin-top: 0.5rem;
+  font-family: "Square Peg", cursive;
+  font-style: normal;
+  font-weight: 400;
+}
+.subTitleMember {
+  font-size: 2rem;
+  color: #505098;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-family: "Quicksand", serif;
+  font-weight: 300;
+  margin-bottom: -20px;
+}
+
+.review {
+  color: #505098;
 }
 .textContainer {
   display: flex;

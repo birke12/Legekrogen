@@ -4,8 +4,8 @@ const MemberReviews = () => {
   return (
     <section>
       <div className={styles.headerContainer}>
-        <h3>Vores kunder</h3>
-        <h2>UDTALER</h2>
+        <h3 className={styles.titleMember}>Vores kunder</h3>
+        <h2 className={styles.subTitleMember}>UDTALER</h2>
       </div>
       <div className={styles.parentContainer}>
         <div className={styles.textContainer}>
