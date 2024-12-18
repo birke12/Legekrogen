@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Square+Peg&display=swap');
+
+.memberClub {
+  flex: 1;
+  background-color: #d9f1ff; /* Light blue */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align items to the top */
+  min-height: 300px;
+  color: #164d87;
+}
+.memberClub p {
+  margin-top: 25px;
+  font-size: 16px;
+  max-width: 270px;
+  font-family: "Quicksand", serif;
+}
+
+.memberClub h3 {
+  margin: 0px 0; /* Control spacing above and below */
+  font-family: "Square Peg", cursive;
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.memberButton {
+  padding: 10px 20px;
+  background-color: #284768;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 60px;
+  max-width: 400px;
+  margin: 20px auto; /* Center horizontally and control spacing */
+  min-width: 350px;
+}
+
+.memberButton:hover {
+  background-color: #0056b3;
+}

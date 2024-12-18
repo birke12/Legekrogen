@@ -1,0 +1,59 @@
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-style: none;
+    font-size: 16px;
+}
+
+.accordionHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: rgb(58, 90, 187);
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.arrowIcon {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+  color: rgb(36, 58, 125);
+}
+
+.accordionContent {
+  padding: 15px 20px; /* Adjust padding to give space inside the content */
+  background-color: #fff;
+  color: rgb(58, 90, 187);
+    font-size: 16px;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  text-align: left; /* Ensures text is aligned to the left */
+    font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+    font-size: 16px;
+}
+.accordionContent li {
+  margin: 0 20px; /* Adds space on the left and right of the border */
+   font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+    font-size: 16px;
+}
+
+
+
+

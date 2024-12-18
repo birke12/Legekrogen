@@ -16,6 +16,7 @@
   cursor: pointer;
   font-size: 2rem;
   color: rgb(255, 255, 255);
+  z-index: 999;
 }
 
 .nav-links {
@@ -24,7 +25,7 @@
   flex-direction: column;
   position: absolute;
   z-index: 200;
-  top: 70px;
+  top: 0px;
   left: 0;
   width: 100%;
   background-color: #3d5fa3;
@@ -38,6 +39,7 @@
   li {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 10px;
 
     a {
       color: #ffffff;
@@ -75,7 +77,6 @@
   color: rgb(255, 255, 255);
 }
 
-/* Styles for larger screens */
 @media (min-width: 768px) {
   .burger-menu {
     display: none;
@@ -87,7 +88,7 @@
     position: static;
     width: auto;
     background-color: transparent;
-
+   
     li {
       padding: 0;
       margin: 0 1rem;
@@ -96,5 +97,23 @@
         color: rgb(255, 255, 255);
       }
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    height: 100vh;
+    padding-top: 160px; /* Add padding from the top */
+  }
+
+  ul {
+    margin-top: 0; /* Reset any conflicting margin from ul */
+  }
+
+  a {
+    font-size: 30px;
+    font-family: "Quicksand", serif;
+  font-weight: 300;
   }
 }

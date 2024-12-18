@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
 
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +13,11 @@ const Navigation = () => {
   };
 
   return (
+
+   
     <nav className="navbar">
+
+
       <a href="/">
       
       <img className="logo1"
@@ -23,6 +28,8 @@ const Navigation = () => {
       <div className="burger-menu" onClick={toggleMenu}>
         {isOpen ? <IoClose size={30} /> : <GiHamburgerMenu size={30} />}
       </div>
+    
+
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <NavLink to="/">Forside</NavLink>
@@ -35,9 +42,11 @@ const Navigation = () => {
         </li>
       
         <li>
-          <NavLink to="/customerclub">Kundeklubben</NavLink>
+          <NavLink to="/memberspage">Kundeklubben</NavLink>
         </li>
       </ul>
+
+
     </nav>
   );
 };

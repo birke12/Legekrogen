@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProductCard = ({ product }) => {
-  const [products, setProducts] = useLocalStorage("Products", []);
+  const [products, setProducts] = useLocalStorage("addProduct", []);
   const isProducts = products.includes(product.id);
 
-  const handleLike = () => {
-    setProducts((prevProducts) =>
+  const addToCart = () => {
+    setProducts((addProducts) =>
       isProducts
-        ? prevProducts.filter((pro) => pro !== product.id)
-        : [...prevProducts, product.id]
+        ? addProducts.filter((add) => add !== product.id)
+        : [...addProducts, product.id]
     );
   };
 
@@ -29,24 +29,21 @@ const ProductCard = ({ product }) => {
 
       {/* Bottom Half: Title, Subtitle, Price */}
       <div className={styles.detailsContainer}>
-       <div className={styles.textContainer}>
+        <div className={styles.textContainer}>
           <h3 className={styles.title}>{product.title}</h3>
           <p className={styles.description}>{product.description}</p>
-       </div>
+        </div>
         <div className={styles.priceContainer}>
           {/* <p className={styles.priceTxt}>Pris:</p> */}
           <p className={styles.price}>{product.price} kr</p>
         </div>
 
         {/* Favorite Button Section */}
-        <div className={styles.likeContainer}>
-          {/*   <button
-            onClick={handleLike}
-            className={isProducts ? styles.removeButton : styles.addButton}
-          >
+        {/* <div className={styles.likeContainer}>
+          <button onClick={addToCart} className={styles.addButton}>
             {isProducts ? "Fjern fra Kurv" : "Tilføj til Kurv"}
-          </button> */}
-        </div>
+          </button>
+        </div> */}
       </div>
     </figure>
   );

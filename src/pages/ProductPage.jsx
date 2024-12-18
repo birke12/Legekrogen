@@ -2,6 +2,7 @@ import PageHeader from "../components/pageHeader/PageHeader";
 import { useFetchProducts } from "../hooks/useFetchProducts";
 import headerImg from "../assets/heros/produkter.jpg";
 import styles from "../components/productPage/productPage.module.css";
+
 import ProductCard from "../components/productCard/ProductCard";
 
 const ProductsPage = () => {
@@ -13,6 +14,7 @@ const ProductsPage = () => {
         headerImg={headerImg}
         title="På udkig efter nyt"
         subTitle="LEGETØJ"
+        header2={styles.customHeader}
       />
       <section className={styles.favGrid}>
         <div className={styles.gridHeader}>
